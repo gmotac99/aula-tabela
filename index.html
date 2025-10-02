@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        th,
+        td {
+            border: 1px solid rgb(0, 0, 0);
+            border-collapse: separate;
+            padding: 10px;
+        }
+
+        tfoot {
+            background-color: brown;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Tabelas</h1>
+    <Table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Black Friday</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Produto 1</td>
+                <td>5</td>
+                <td>10$</td>
+                <td rowspan="2">Sim</td>
+            </tr>
+
+
+            <tr>
+                <td>Produto 2</td>
+                <td>10</td>
+                <td>20$</td>
+            </tr>
+
+
+            <tr>
+                <td>Produto 3</td>
+                <td>15</td>
+                <td>25$</td>
+                <td>Não</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">total</td>
+                <td>55$</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+</html>
+
+
+<!-- thead = Representa cabeçalho
+ tr = Representa uma linha, 
+ th = Diz respeito ás colunas 
+ td = Representa os dados da tabela 
+ tfoot = mesma estrutura do thead, mas fica no final da tabela. -->
